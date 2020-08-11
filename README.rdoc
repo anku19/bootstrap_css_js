@@ -6,23 +6,22 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+2.4.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+* Rails version
+4.2.10
 
 * Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. check git status using
+git status
+2. add untracked files
+git add .
+3. commit all files
+git commit -m "commit message"
+4. push it to master repo
+5. Deploy it on heroku
+heroku create
+6. Push to heroku master
+git push heroku master
+7. migrate the DB
+heroku run rake db:migrate
